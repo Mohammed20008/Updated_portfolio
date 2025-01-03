@@ -14,12 +14,12 @@ import { GrReactjs } from "react-icons/gr";
 const About = () => {
   const { ref } = useSectionName("About", 1);
   return (
-    <section className="scroll-mt-28" id="about" ref={ref}>
+    <section className="scroll-mt-28 px-40" id="about" ref={ref}>
       <div>
         <SectionHeading>about me</SectionHeading>
-        <div className=" flex flex-col gap-4">
-          <div className="text-center text-2xl lg:text-5xl text-gray-950 leading-normal flex-wrap dark:text-gray-300">
-            <span className="text-center">I am Mohammed,</span>{" "}
+        <div className=" flex flex-col gap-4 items-start">
+          <div className="text-xl lg:text-4xl text-gray-800 leading-normal flex-wrap dark:text-gray-300 flex md:items-start">
+            <span className="">I am Mohammed</span>{" "}
             <span>A full-stack developer with solid experience in:</span>
           </div>
           <div className="flex flex-col lg:text-4xl gap-4 text-gray-700 dark:text-gray-400">

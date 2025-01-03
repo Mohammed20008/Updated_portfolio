@@ -66,7 +66,7 @@ export function TabsDemo() {
     <div
       id="projects"
       ref={ref}
-      className="h-[20rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-center justify-center my-40 scroll-mt-24 transition"
+      className="h-[30rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-10 scroll-mt-24 transition ] px-20 md:px-10"
     >
       <SectionHeading>My Projects</SectionHeading>
       <Tabs tabs={tabs} />
@@ -81,7 +81,7 @@ const DummyContent = ({ img }: { img?: string }) => {
       alt="dummy image"
       width="1000"
       height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="object-cover object-left-top h-[90%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
     />
   );
 };

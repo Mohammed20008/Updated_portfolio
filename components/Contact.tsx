@@ -1,3 +1,4 @@
+"use client";
 import { FaPaperPlane } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
@@ -7,7 +8,7 @@ import { sendEmail } from "./SendEmail";
 import { useFormStatus } from "react-dom";
 import SubmitBtn from "./ui/SubmitBtn";
 import toast from "react-hot-toast";
-
+import { BackgroundBeams } from "./ui/background-beams";
 const Contact = () => {
   const { ref, inView = 0.8 } = useSectionName("Contact");
 
@@ -15,7 +16,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="relative flex w-full px-40 flex-col bg-transparent"
+      className="relative flex w-full px-20 md:px-10 flex-col bg-transparent"
       initial={{
         opacity: 0,
         y: -100,
@@ -29,8 +30,14 @@ const Contact = () => {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <BackgroundBeamsDemo />
+    </motion.section>
+  );
+};
 
+export function BackgroundBeamsDemo() {
+  return (
+    <div className="h-[30rem] w-full rounded-md dark:bg-neutral-950 relative flex bg-gray-800 flex-col items-center justify-center antialiased">
       <form
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData);
@@ -40,23 +47,30 @@ const Contact = () => {
           }
           toast.success("Email sent successfully!");
         }}
-        className="flex w-full flex-col space-y-4"
+        className="flex w-full flex-col space-y-4 relative z-10 px-4"
       >
+        <h1 className="relative z-10 text-5xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold mb-8">
+          Contact Me
+        </h1>
         <input
           type="email"
           className="h-10 rounded bg-opacity-60 p-4 focus:outline-none bg-transparent ring-[0.5px] ring-slate-500 bg-gray-800 backdrop-blur-sm"
           required
           name="email"
+          placeholder="Enter your email"
         />
         <textarea
           name="message"
           id=""
-          className="h-40 rounded bg-gray-200 p-4 focus:outline-none dark:bg-violet-950"
+          className="h-40 rounded bg-opacity-60 p-4 focus:outline-none bg-transparent ring-[0.5px] ring-slate-500 bg-gray-800 backdrop-blur-sm"
           required
+          placeholder="Enter your message"
         />
         <SubmitBtn />
       </form>
-    </motion.section>
+      <BackgroundBeams />
+    </div>
   );
-};
-export default Contact;
+}
+
+export { Contact };

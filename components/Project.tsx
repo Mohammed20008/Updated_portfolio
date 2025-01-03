@@ -12,7 +12,7 @@ const Project = ({ project }: { project: Projectype }) => {
   });
   return (
     <motion.div
-      className="projectStyle group overflow-hidden"
+      className="projectStyle group overflow-hidden px-40"
       ref={ref}
       style={{
         scale: scrollYProgress,

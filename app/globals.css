@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header {
-  @apply fixed top-0 z-30 flex w-fit items-center justify-center border border-white border-opacity-20 bg-white bg-opacity-40 p-2 shadow-md backdrop-blur-lg border-none dark:bg-gray-600 dark:bg-opacity-70 dark:backdrop-blur-2xl sm:top-4 sm:mt-6 sm:h-[3rem] sm:rounded-full sm:py-2;
+  @apply fixed top-0 z-30 flex w-fit items-center justify-center border border-white border-opacity-20 bg-white bg-opacity-40 p-2 shadow-md backdrop-blur-lg border-none dark:bg-gray-600 dark:bg-opacity-70 dark:backdrop-blur-2xl top-4 sm:mt-6 sm:h-[3rem] rounded-full py-2;
 }
 .introSection {
   @apply mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4;
