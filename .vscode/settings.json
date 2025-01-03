@@ -14,7 +14,7 @@
     "**/package-lock.json": true,
     "**/postcss.config.js": true,
     "**/tailwind.config.js": false,
-    "**/tsconfig.json": true,
+    "**/tsconfig.json": false,
     "**/LICENSE": true,
     "**/.eslintrc.json": true,
     "**/.eslintignore": true,
