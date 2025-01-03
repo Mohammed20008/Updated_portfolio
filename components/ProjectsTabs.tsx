@@ -6,7 +6,9 @@ import { projectsData } from "@/lib/data";
 import { useState } from "react";
 
 export function TabsDemo() {
-  const [activeTab, setActiveTab] = useState(projectsData[0]);
+  const [activeTab, setActiveTab] = useState(
+    projectsData[0].title.toLowerCase()
+  );
   const tabs = [
     {
       title: "Product",
@@ -62,7 +64,7 @@ export function TabsDemo() {
 
   return (
     <div className="b relative mx-auto my-40 flex h-[20rem] w-full max-w-5xl flex-col items-start  justify-start [perspective:1000px] md:h-[40rem]">
-      <Tabs tabs={tabs} onTabChange={setActiveTab} />
+      <Tabs tabs={tabs} />
     </div>
   );
 }

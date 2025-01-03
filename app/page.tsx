@@ -2,14 +2,14 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
-import Projects from "@/components/Projects";
+// import Projects from "@/components/Projects";
 import SectionDevider from "@/components/SectionDevider";
-import Skills from "@/components/Skills";
+// import Skills from "@/components/Skills";
 import { motion } from "framer-motion";
 import { ModeToggle } from "../components/ToggleMode";
-import { Tabs } from "@/components/ui/tabs";
+// import { Tabs } from "@/components/ui/tabs";
 import { TabsDemo } from "@/components/ProjectsCards";
-import Magnito from "@/components/Magnito";
+// import Magnito from "@/components/Magnito";
 
 export default function Home() {
   return (
