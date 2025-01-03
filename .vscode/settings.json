@@ -1,0 +1,42 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": false,
+    "**/README.md": true,
+    "**/next-env.d.ts": true,
+    "**/next.config.js": true,
+    "**/package-lock.json": true,
+    "**/postcss.config.js": true,
+    "**/tailwind.config.js": false,
+    "**/tsconfig.json": true,
+    "**/LICENSE": true,
+    "**/.eslintrc.json": true,
+    "**/.eslintignore": true,
+    "**/.npmrc": true,
+    "**/.gitignore": true,
+    "app/about": true,
+    "app/blog": true,
+    "app/docs": true,
+    "app/pricing": true,
+    "app/error.tsx": true,
+    "config": true,
+    "types": true,
+    "components/navbar.tsx": true
+  },
+  "hide-files.files": [
+    "app/about",
+    "app/blog",
+    "app/docs",
+    "app/pricing",
+    "app/error.tsx",
+    "config",
+    "types",
+    "components/navbar.tsx"
+  ]
+}

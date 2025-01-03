@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply fixed top-0 z-30 flex w-fit items-center justify-center border border-white border-opacity-20 bg-white bg-opacity-40 p-2 shadow-md backdrop-blur-lg dark:border-none dark:bg-gray-600 dark:bg-opacity-70 dark:backdrop-blur-2xl sm:top-4 sm:mt-6 sm:h-[3rem] sm:rounded-full sm:py-2;
+}
+.introSection {
+  @apply mt-6 flex scroll-mt-[100rem] flex-col items-center justify-center space-y-4;
+}
+.contactButton {
+  @apply rounded-full bg-gray-900 bg-gradient-to-r backdrop-blur-xl transition ease-in-out hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-black;
+}
+.cvButton {
+  @apply rounded-full bg-gray-900 bg-gradient-to-r backdrop-blur-xl transition ease-in-out hover:scale-110 dark:from-indigo-500 dark:to-purple-500 dark:text-black;
+}
+.link {
+  @apply rounded-full bg-white p-3 transition hover:scale-110 hover:text-gray-950 dark:bg-gray-950 dark:text-gray-400 dark:hover:bg-gray-800;
+}
+.aboutData {
+  @apply bg-gradient-to-r from-gray-900 via-gray-600 to-gray-700 bg-clip-text font-medium leading-normal tracking-tight text-transparent dark:from-gray-50 dark:to-slate-600 text-5xl flex flex-col;
+}
+.projectStyle {
+  @apply relative max-w-xl lg:max-w-3xl flex md:flex-row flex-col h-[430px] overflow-hidden rounded-md bg-gray-200 bg-gradient-to-r from-indigo-300 to-purple-300 p-4 pb-1 transition hover:bg-gray-300 dark:from-[#1A1A1A] dark:to-[#1A1A1A] hover:bg-opacity-20;
+}
+.project {
+  @apply flex items-center rounded-full bg-gray-800 px-2 text-sm text-gray-300;
+}
+.skills {
+  @apply mb-1 ml-1 flex cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-indigo-400 p-2 text-gray-900 hover:scale-110 hover:bg-gray-200 dark:border-none dark:bg-gray-900 dark:text-gray-400 dark:hover:bg-gray-800;
+}
+.footer {
+  @apply mt-4 flex h-10 max-w-3xl w-[700px] items-center justify-between rounded-t-md dark:bg-gray-950 bg-indigo-200 px-4 text-sm text-gray-950 dark:text-gray-400;
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 12 76% 61%;
+
+    --chart-2: 173 58% 39%;
+
+    --chart-3: 197 37% 24%;
+
+    --chart-4: 43 74% 66%;
+
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@layer components {
+  .noise:before {
+    @apply absolute top-0 left-0 w-full h-full opacity-10;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+    background-size: 182px;
+    background-repeat: repeat;
+  }
+}
