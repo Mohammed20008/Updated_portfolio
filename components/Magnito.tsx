@@ -46,14 +46,14 @@ const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
         ref={ref}
         variants={variants}
         animate={{ x, y }}
-        transition="transition"
+        transition={variants.transition}
       >
         <motion.div
           className="absolute w-40 h-40 bg-indigo-700 rounded-full -bottom-24"
           initial={{ scale: 0.03 }}
           animate={{ scale: isHovered ? 3 : 0.03 }}
           variants={variants}
-          transition="transition"
+          transition={variants.transition}
         ></motion.div>
         <motion.div className="z-10 border-none">
           <Link
@@ -71,5 +71,4 @@ const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
     </div>
   );
 };
-
 export default Magnito;
