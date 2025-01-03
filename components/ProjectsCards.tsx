@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Tabs } from "./ui/tabs";
 import { useSectionName } from "@/lib/hooks";
 import SectionHeading from "./SectionHeading";
+import Link from "next/link";
 
 export function TabsDemo() {
   const tabs = [
@@ -12,7 +13,9 @@ export function TabsDemo() {
       value: "obsidian.png",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-violet-950">
-          <p>Obsidian Tab</p>
+          <Link href="https://obsidienclone-htnkrvwcl-mohammeds-projects-0564e50c.vercel.app/">
+            Obsidian Tab
+          </Link>
           <DummyContent img="/obsidian.png" />
         </div>
       ),
@@ -22,8 +25,8 @@ export function TabsDemo() {
       value: "rogue",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-violet-950">
-          <p>Rogue tab</p>
-          <DummyContent img="/rogue.png" />
+          <Link href="">Rogue tab</Link>
+          <DummyContent img="/Rogue.png" />
         </div>
       ),
     },
