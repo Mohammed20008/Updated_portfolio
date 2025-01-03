@@ -8,7 +8,7 @@ import { TypewriterEffectDemo } from "./TypeWriterIntro";
 import { useSectionName } from "@/lib/hooks";
 import { useActiveSectionContext } from "./ActiveSectionProvider";
 import { Cover } from "./ui/cover";
-import Magnito from "./Magnito";
+import Magnito from "./Magnito.jsx";
 // import Magnito from "./Magnito";
 
 const Intro = () => {
