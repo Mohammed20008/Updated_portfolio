@@ -12,7 +12,7 @@ const variants = {
   },
 };
 const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
-  const mouseenter = (e) => {
+  const mouseenter = (e: { clientX: any; clientY: any }) => {
     setIsHovered(true);
     const { clientX, clientY } = e;
     const { width, height, left, top } = ref.current.getBoundingClientRect();
