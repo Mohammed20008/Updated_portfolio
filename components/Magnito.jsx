@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 const variants = {
   transition: {
     duration: 0.5,
@@ -11,8 +11,8 @@ const variants = {
     mass: 0.1,
   },
 };
-const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
-  const mouseenter = (e: { clientX: any; clientY: any }) => {
+const Magnito = ({ setTimeOfLastClick, setActiveSection }) => {
+  const mouseenter = (e) => {
     setIsHovered(true);
     const { clientX, clientY } = e;
     if (ref.current) {
