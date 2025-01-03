@@ -15,13 +15,15 @@ const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
   const mouseenter = (e: { clientX: any; clientY: any }) => {
     setIsHovered(true);
     const { clientX, clientY } = e;
-    const { width, height, left, top } = ref.current.getBoundingClientRect();
-    const x = clientX - (left + width / 2);
-    const y = clientY - (top + height / 2);
-    setPosition({
-      x,
-      y,
-    });
+    if (ref.current) {
+      const { width, height, left, top } = ref.current.getBoundingClientRect();
+      const x = clientX - (left + width / 2);
+      const y = clientY - (top + height / 2);
+      setPosition({
+        x,
+        y,
+      });
+    }
   };
   const mouseleave = () => {
     setPosition({
