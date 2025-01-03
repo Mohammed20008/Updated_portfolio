@@ -17,7 +17,7 @@
     "**/tsconfig.json": false,
     "**/LICENSE": true,
     "**/.eslintrc.json": true,
-    "**/.eslintignore": true,
+    "**/.eslintignore": false,
     "**/.npmrc": true,
     "**/.gitignore": true,
     "app/about": true,

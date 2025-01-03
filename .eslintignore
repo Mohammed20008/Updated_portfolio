@@ -9,6 +9,7 @@ scripts/*
 *.config.js
 .DS_Store
 node_modules
+components/Magnito.tsx
 coverage
 .next
 build
