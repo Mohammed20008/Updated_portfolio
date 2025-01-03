@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/Magnito.jsx"
+    "components/Magnito.tsx"
   ],
-  "exclude": ["node_modules", "components/Magnito.jsx"]
+  "exclude": ["node_modules", "components/Magnito.tsx"]
 }

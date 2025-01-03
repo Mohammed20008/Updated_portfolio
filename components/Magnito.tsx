@@ -11,8 +11,8 @@ const variants = {
     mass: 0.1,
   },
 };
-const Magnito = ({ setTimeOfLastClick, setActiveSection }) => {
-  const mouseenter = (e) => {
+const Magnito = ({ setTimeOfLastClick, setActiveSection }: any) => {
+  const mouseenter = (e: { clientX: any; clientY: any }) => {
     setIsHovered(true);
     const { clientX, clientY } = e;
     if (ref.current) {
@@ -32,7 +32,7 @@ const Magnito = ({ setTimeOfLastClick, setActiveSection }) => {
     });
     setIsHovered(false);
   };
-  const ref = useRef(null);
+  const ref = useRef<HTMLInputElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const { x, y } = position;
