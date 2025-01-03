@@ -7,7 +7,7 @@ import Link from "next/link";
 import { TypewriterEffectDemo } from "./TypeWriterIntro";
 import { useSectionName } from "@/lib/hooks";
 import { useActiveSectionContext } from "./ActiveSectionProvider";
-import Magnito from "./Magnito";
+// import Magnito from "./Magnito";
 
 const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
