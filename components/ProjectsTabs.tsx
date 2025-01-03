@@ -42,7 +42,7 @@ export function TabsDemo() {
       title: "Content",
       value: "content",
       content: (
-        <div className="relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-purple-700 to-violet-900 p-10 text-xl font-bold text-white md:text-4xl">
+        <div className="relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-violet-950 p-10 text-xl font-bold text-white md:text-4xl">
           <p>Content tab</p>
           <DummyContent />
         </div>
@@ -52,7 +52,7 @@ export function TabsDemo() {
       title: "Random",
       value: "random",
       content: (
-        <div className="relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-purple-700 to-violet-900 p-10 text-xl font-bold text-white md:text-4xl">
+        <div className="relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-violet-950 p-10 text-xl font-bold text-white md:text-4xl">
           <p>Random tab</p>
           <DummyContent />
         </div>

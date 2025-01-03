@@ -11,7 +11,7 @@
 	"dependencies": {
 		"@nextui-org/button": "2.2.3",
 		"@nextui-org/code": "2.2.3",
-		"@nextui-org/input": "2.4.3",
+		"@nextui-org/input": "^2.4.3",
 		"@nextui-org/kbd": "2.2.3",
 		"@nextui-org/link": "2.2.3",
 		"@nextui-org/listbox": "2.3.3",
@@ -35,6 +35,7 @@
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"react-hook-inview": "^4.5.1",
+		"react-hot-toast": "^2.4.1",
 		"react-icons": "^5.4.0",
 		"react-intersection-observer": "^9.14.0",
 		"resend": "^4.0.1",

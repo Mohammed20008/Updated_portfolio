@@ -7,20 +7,22 @@ import Link from "next/link";
 import { TypewriterEffectDemo } from "./TypeWriterIntro";
 import { useSectionName } from "@/lib/hooks";
 import { useActiveSectionContext } from "./ActiveSectionProvider";
+import Magnito from "./Magnito";
 
 const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { ref } = useSectionName("Home");
 
   return (
-    <section ref={ref} id="home" className="introSection pt-24">
+    <section ref={ref} id="home" className="introSection pt-20">
+      {/* <Magnito /> */}
       <div className="relative h-40 w-40 flex items-center justify-center">
         <div>
           <Image
             alt="logo"
             src="/profile.jpg"
             fill
-            className="rounded-full border-4 border-white object-cover shadow-2xl shadow-black drop-shadow-2xl opacity-85"
+            className="rounded-full border-4 border-gray-800 object-cover shadow-2xl shadow-black drop-shadow-2xl opacity-85"
           />
         </div>
 
@@ -33,12 +35,12 @@ const Intro = () => {
           👋
         </motion.span>
       </div>
-      <div className="space-y-8 text-center flex flex-col items-center justify-center">
+      <div className=" text-center flex flex-col items-center justify-center">
         <h1 className=" h-40 dark:text-gray-400">
           <TypewriterEffectDemo />
         </h1>
         {/* Buttons */}
-        <div className="flex-col items-center justify-center space-y-4 font-semibold md:flex-row">
+        <div className="flex-col items-center justify-center space-y-4 font-semibold md:flex-row -mt-8">
           <Button className="contactButton group">
             <Link
               href="#contact"

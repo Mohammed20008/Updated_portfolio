@@ -9,7 +9,8 @@ const Skills = () => {
   <SectionHeading>My Skills</SectionHeading>;
 
   return (
-    <section ref={ref} id="skills" className="flex scroll-mt-28">
+    <section ref={ref} id="skills" className="flex scroll-mt-28 flex-col">
+      <SectionHeading>My Skills</SectionHeading>
       <ul className="flex max-w-2xl flex-wrap items-center justify-center gap-1">
         {skillsData.map((skill, index) => (
           <motion.li

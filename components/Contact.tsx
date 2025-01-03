@@ -6,7 +6,7 @@ import SectionHeading from "./SectionHeading";
 import { sendEmail } from "./SendEmail";
 import { useFormStatus } from "react-dom";
 import SubmitBtn from "./ui/SubmitBtn";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const { ref, inView = 0.8 } = useSectionName("Contact");
@@ -15,7 +15,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="relative flex w-full flex-col"
+      className="relative flex w-full px-40 flex-col bg-transparent"
       initial={{
         opacity: 0,
         y: -100,
@@ -35,23 +35,23 @@ const Contact = () => {
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData);
           if (error) {
-            // toast.error(error);
+            toast.error(error);
             return;
           }
-          // toast.success("success");
+          toast.success("Email sent successfully!");
         }}
         className="flex w-full flex-col space-y-4"
       >
         <input
           type="email"
-          className="h-10 rounded bg-opacity-60 p-4 focus:outline-none dark:bg-gray-900"
+          className="h-10 rounded bg-opacity-60 p-4 focus:outline-none bg-transparent ring-[0.5px] ring-slate-500 bg-gray-800 backdrop-blur-sm"
           required
           name="email"
         />
         <textarea
           name="message"
           id=""
-          className="h-40 rounded bg-gray-200 p-4 focus:outline-none dark:bg-gray-900"
+          className="h-40 rounded bg-gray-200 p-4 focus:outline-none dark:bg-violet-950"
           required
         />
         <SubmitBtn />

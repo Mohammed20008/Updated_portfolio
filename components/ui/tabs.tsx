@@ -16,14 +16,12 @@ export const Tabs = ({
   activeTabClassName,
   tabClassName,
   contentClassName,
-  onTabChange,
 }: {
   tabs: Tab[];
   containerClassName?: string;
   activeTabClassName?: string;
   tabClassName?: string;
   contentClassName?: string;
-  onTabChange: any;
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0]);
   const [tabs, setTabs] = useState<Tab[]>(propTabs);
@@ -42,8 +40,8 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "no-visible-scrollbar relative flex w-full max-w-full flex-row items-center justify-start overflow-auto [perspective:1000px] sm:overflow-visible",
-          containerClassName,
+          "flex flex-row items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          containerClassName
         )}
       >
         {propTabs.map((tab, idx) => (
@@ -54,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative rounded-full px-4 py-2", tabClassName)}
+            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -64,8 +62,8 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 rounded-full bg-gray-200 dark:bg-zinc-800 ",
-                  activeTabClassName,
+                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
+                  activeTabClassName
                 )}
               />
             )}
@@ -81,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-32", contentClassName)}
+        className={cn("mt-16", contentClassName)}
       />
     </>
   );
@@ -102,7 +100,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative h-full w-full">
+    <div className="relative w-full h-full">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
@@ -116,7 +114,7 @@ export const FadeInDiv = ({
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("absolute left-0 top-0 h-full w-full", className)}
+          className={cn("w-full h-full absolute top-0 left-0", className)}
         >
           {tab.content}
         </motion.div>

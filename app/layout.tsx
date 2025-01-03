@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import ActiveSectionProvider from "@/components/ActiveSectionProvider";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "react-hot-toast";
 // import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className=" w-screen scroll-smooth">
+    <html lang="en" className=" w-screen scroll-smooth dark">
       <body
         className={`${inter.className} bg-gray-300 dark:bg-black relative flex flex-col h-full noise overflow-x-hidden`}
       >
+        <Toaster />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -43,7 +45,7 @@ export default function RootLayout({
 
               {children}
 
-              <Footer />
+              {/* <Footer /> */}
             </main>
           </ActiveSectionProvider>
         </ThemeProvider>
