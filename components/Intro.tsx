@@ -8,8 +8,9 @@ import { TypewriterEffectDemo } from "./TypeWriterIntro";
 import { useSectionName } from "@/lib/hooks";
 import { useActiveSectionContext } from "./ActiveSectionProvider";
 import { Cover } from "./ui/cover";
-import Magnito from "./Magnito.jsx";
+// import Magnito from "./Magnito.jsx";
 // import Magnito from "./Magnito";
+import Magnito from "@/components/Magnito";
 
 const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -17,7 +18,6 @@ const Intro = () => {
 
   return (
     <section ref={ref} id="home" className="introSection pt-20 px-40">
-      {/* <Magnito /> */}
       <div className="relative h-40 w-40 flex items-center justify-center">
         <div>
           <Image
