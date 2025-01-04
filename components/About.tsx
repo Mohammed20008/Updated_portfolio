@@ -11,6 +11,9 @@ import { DiReact } from "react-icons/di";
 import SectionHeading from "./SectionHeading";
 import { useSectionName } from "@/lib/hooks";
 import { GrReactjs } from "react-icons/gr";
+import { Separator } from "@radix-ui/react-dropdown-menu";
+import { SeparatorHorizontal } from "lucide-react";
+import { LuSeparatorHorizontal } from "react-icons/lu";
 const About = () => {
   const { ref } = useSectionName("About", 1);
   return (
@@ -24,7 +27,8 @@ const About = () => {
               A full-stack developer with solid experience in:
             </span>
           </div>
-          <div className="flex flex-col lg:text-4xl text-2xl font-semibold gap-4 text-gray-700 dark:text-gray-400">
+          <div className="w-full h-[1px] bg-gray-600" />
+          <div className="flex flex-col lg:text-4xl text-2xl font-semibold gap-4 text-gray-700 dark:text-gray-400 px-20">
             <span className="flex items-center gap-2 ">
               <FaReact className="text-indigo-400 text-4xl" />
               React.js/Next.js
