@@ -18,11 +18,13 @@ const About = () => {
       <div>
         <SectionHeading>about me</SectionHeading>
         <div className=" flex flex-col gap-4 items-start">
-          <div className="text-2xl font-semibold md:text-4xl text-gray-800 leading-normal flex-wrap dark:text-gray-300 flex md:items-start">
-            <span className="">I am Mohammed</span>{" "}
-            <span>A full-stack developer with solid experience in:</span>
+          <div className="text-2xl font-semibold md:text-4xl text-gray-800 leading-normal flex-wrap dark:text-gray-300 flex md:items-center justify-center">
+            <span className="flex text-center">I am Mohammed</span>{" "}
+            <span className="text-center">
+              A full-stack developer with solid experience in:
+            </span>
           </div>
-          <div className="flex flex-col lg:text-4xl gap-4 text-gray-700 dark:text-gray-400">
+          <div className="flex flex-col lg:text-4xl text-2xl font-semibold gap-4 text-gray-700 dark:text-gray-400">
             <span className="flex items-center gap-2 ">
               <FaReact className="text-indigo-400 text-4xl" />
               React.js/Next.js
