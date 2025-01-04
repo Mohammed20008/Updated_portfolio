@@ -16,7 +16,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="relative flex w-full px-20 md:px-10 flex-col bg-transparent"
+      className="relative flex w-full px-40 md:px-10 flex-col bg-transparent"
       initial={{
         opacity: 0,
         y: -100,

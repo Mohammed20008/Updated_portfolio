@@ -66,7 +66,7 @@ export function TabsDemo() {
     <div
       id="projects"
       ref={ref}
-      className="h-[30rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-10 scroll-mt-24 transition ] px-20 md:px-10"
+      className="h-[30rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-center justify-center my-10 scroll-mt-24 transition ] px-40 md:px-10"
     >
       <SectionHeading>My Projects</SectionHeading>
       <Tabs tabs={tabs} />

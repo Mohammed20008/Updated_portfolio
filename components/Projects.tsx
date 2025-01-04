@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section id="projects" className=" scroll-mt-24 transition" ref={ref}>
       <SectionHeading>My Projects</SectionHeading>
-      <div className="flex flex-col space-y-4">
+      <div className="flex space-y-4 hidden">
         {projectsData.map((project) => (
           <Project project={project} key={project.title} />
         ))}
