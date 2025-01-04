@@ -23,7 +23,7 @@ const About = () => {
         <div className=" flex flex-col gap-4 items-start">
           <div className="text-2xl font-semibold md:text-4xl text-gray-800 leading-normal flex-wrap dark:text-gray-300 flex md:items-center justify-center">
             <span className="flex text-center">I am Mohammed</span>{" "}
-            <span className="text-center">
+            <span className="flex flex-wrap px-10 text-center">
               A full-stack developer with solid experience in:
             </span>
           </div>
