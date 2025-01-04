@@ -30,7 +30,7 @@ const Header = () => {
                 "relative flex items-center px-2 py-1 font-medium transition hover:text-gray-950 dark:hover:text-gray-50",
                 {
                   "font-medium dark:text-gray-300": ActiveSection === link.name,
-                },
+                }
               )}
             >
               {link.name === ActiveSection && (

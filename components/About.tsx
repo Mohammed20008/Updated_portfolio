@@ -29,36 +29,36 @@ const About = () => {
           </div>
           <div className="w-full h-[1px] bg-gray-600" />
           <div className="flex flex-col lg:text-4xl text-2xl font-semibold gap-4 text-gray-700 dark:text-gray-400 px-20">
-            <span className="flex items-center gap-2 ">
+            <div className="flex items-center gap-2 ">
               <FaReact className="text-indigo-400 text-4xl" />
               React.js/Next.js
-            </span>
-            <span className="flex items-center gap-2 ">
+            </div>
+            <div className="flex items-center gap-2 ">
               <DiNodejs className="text-indigo-400 text-4xl" />
               Node.js
-            </span>
-            <span className="flex items-center gap-2 ">
+            </div>
+            <div className="flex items-center gap-2 ">
               <SiExpress className="text-indigo-400 text-4xl" />
               Express
-            </span>
-            <span className="flex items-center gap-2 ">
+            </div>
+            <div className="flex items-center gap-2 ">
               <DiMongodb className="text-indigo-400 text-4xl" />
               MongoDB
-            </span>
+            </div>
 
-            <span className="flex items-center gap-2 ">
+            <div className="flex items-center gap-2 ">
               {" "}
               <FaCss3Alt className="text-indigo-400 text-4xl" />
               Css
-            </span>
-            <span className="flex items-center gap-2 ">
+            </div>
+            <div className="flex items-center gap-2 ">
               <SiTailwindcss className="text-indigo-400 text-4xl" />
               TailwindCss
-            </span>
-            <span className="flex items-center gap-2 ">
+            </div>
+            <div className="flex items-center gap-2 ">
               <CgFramer className="text-indigo-400 text-4xl" />
               Framer motion.
-            </span>
+            </div>
           </div>
         </div>
       </div>
