@@ -17,7 +17,7 @@ const Intro = () => {
   const { ref } = useSectionName("Home");
 
   return (
-    <section ref={ref} id="home" className="introSection pt-20 px-40">
+    <section ref={ref} id="home" className="introSection pt-20">
       <div className="relative h-40 w-40 flex items-center justify-center">
         <div>
           <Image

@@ -14,7 +14,7 @@ import { TabsDemo } from "@/components/ProjectsCards";
 export default function Home() {
   return (
     <motion.div
-      className="relative mt-8 flex max-w-5xl flex-col items-center px-28 md:px-10 justify-center overflow-hidden py-10"
+      className="relative mt-8 flex max-w-5xl flex-col items-center px-8 md:px-10 justify-center overflow-hidden py-10"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "tween" }}
